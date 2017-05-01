@@ -148,7 +148,8 @@ function mapSqlTypeToFlow(type) {
   const map = {
     integer: 'number',
     text: 'string',
-    'timestamp with time zone': 'Date'
+    'timestamp with time zone': 'Date',
+    uuid: 'string',
   }
   const got = map[type]
   if (!got) {
